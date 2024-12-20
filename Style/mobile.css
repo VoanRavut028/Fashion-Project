@@ -1,0 +1,116 @@
+.navbar-mobile {
+  position: fixed;
+  left: -250px;
+  top: 0px;
+  padding-left: 20px;
+  height: 100%;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.3s;
+  display: none;
+}
+
+.navbar-mobile a {
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  padding-top: 30px;
+}
+
+.navbar-mobile a:hover {
+  background-color: #575757;
+}
+
+.open-btn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  display: none;
+  height: 20px;
+  height: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+@media (max-width: 568px) {
+  .open-btn {
+    display: block;
+    background-color: transparent;
+  }
+  .navbar-mobile {
+    display: block;
+  }
+}
+@media (max-width: 568px) {
+  #screen-mobile-nav-section {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+  }
+    #screen-mobile-nav-section .logo{
+      width: 90px;
+      height: 30px;
+    }
+}
+@media (max-width: 568px) {
+  .navbar {
+    background: linear-gradient(90deg, #e66718, #e66718, #ec8c17);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Deliver > div:nth-child(1) {
+    display: none;
+  }
+  .Deliver div span:nth-child(2) {
+    display: none;
+  }
+  .Deliver div span:nth-child(1) {
+    display: none;
+  }
+  .tool-section-menu {
+    display: none;
+  }
+  .Cart {
+    display: none;
+  }
+  .dropdown-section-top-right button span:nth-child(1) {
+    display: none;
+  }
+  .dropdown-section-top-right button span:nth-child(3) {
+    display: none;
+  }
+  .account-lists {
+    display: none;
+  }
+  .return > a:nth-child(1) > span:nth-child(1) {
+    display: none;
+  }
+  .cart-count {
+    display: none;
+  }
+  .Search-bar input {
+    display: none;
+  }
+  .search-button {
+    display: none;
+  }
+}

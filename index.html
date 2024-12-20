@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://i.pinimg.com/736x/3a/b5/92/3ab592044ca880f91e97773f739d8398.jpg"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="Style/navbar.css" />
+    <script src="Script/navbar.js"></script>
+    <link rel="stylesheet" href="Style/tool-section-menu.css" />
+    <link rel="stylesheet" href="Style/mobile.css" />
+    <title>Amazon</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-mobile" id="navbar-mobile">
+        <span class="close-btn" onclick="closeNavbar()">
+          <i class="fa-solid fa-x"></i>
+        </span>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+      <div id="screen-mobile-nav-section">
+        <div>
+          <span class="open-btn" onclick="openNavbar()">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </div>
+        <div class="logo">
+          <img src="image/amazon-logo-white.png" alt="" class="img-fluid" />
+        </div>
+      </div>
+      <!-- - -->
+      <div
+        class="Deliver text-light d-flex gap-1 justify-content-center align-items-center"
+      >
+        <div>
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="d-flex flex-column">
+          <span>Deliver to</span>
+          <span class="fw-bold p-0">Cambodia</span>
+        </div>
+      </div>
+      <!-- -  -->
+      <div class="Search-bar d-flex justify-content-center align-items-center">
+        <input
+          type="text"
+          class="form-control shadow-none fs-6"
+          placeholder="Search Amazon"
+        />
+        <span class="search-button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </span>
+      </div>
+      <!-- -  -->
+      <div
+        class="dropdown-section-top-right d-flex justify-content-center align-items-center"
+      >
+        <button
+          class="btn shadow-none account-lists text-light dropdown-toggle"
+          type="button"
+        >
+          <span> Hello, sign in </span> <br />
+          <span class="fw-bold">Account & Lists</span>
+        </button>
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <div
+          class="me-0 d-flex justify-content-center align-items-center return"
+        >
+          <a href="#" class="d-flex flex-column my-0 py-0 nav-link">
+            <span>Returns</span>
+            <span class="fw-bolder">& Orders</span>
+          </a>
+        </div>
+
+        <!-- Cart Section -->
+        <div class="Cart d-flex align-items-center">
+          <a
+            href="#"
+            class="d-flex gap-1 align-items-center nav-link position-relative"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count">0</span>
+            <span>Cart</span>
+          </a>
+        </div>
+      </div>
+      <!-- - -->
+    </nav>
+    <!-- start-tool-section  -->
+    <div
+      class="container-fluid tool-section-menu d-flex justify-content-start align-items-center text-center"
+    >
+      <div class="tool-items">
+        <i class="fa-solid fa-bars"></i>
+        <span>All</span>
+      </div>
+      <div class="tool-items">
+        <span>Today's Deals</span>
+      </div>
+      <div class="tool-items">
+        <span>Customer Service</span>
+      </div>
+      <div class="tool-items">
+        <span>Registry</span>
+      </div>
+      <div class="tool-items">
+        <span>Gift Cards</span>
+      </div>
+      <div class="tool-items">
+        <span>Sell</span>
+      </div>
+    </div>
+
+    <!-- end-tool-section  -->
+    <script src="Script/mobile.js"></script>
+  </body>
+</html>
