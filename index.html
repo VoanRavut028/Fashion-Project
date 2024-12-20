@@ -39,21 +39,38 @@
   </head>
   <body>
     <nav class="navbar">
+      <div class="bg-behind-mobile-navbar" id="bg-behind-mobile-navbar"></div>
       <div class="navbar-mobile" id="navbar-mobile">
-        <span class="close-btn" onclick="closeNavbar()">
+        <button class="close-btn" onclick="closeNavbar()">
           <i class="fa-solid fa-x"></i>
-        </span>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+        </button>
+        <div class="top-browser-menu-amazon">
+          <div class="top-mobile-menu-sign">
+            <a href="#">
+              <p>Sign in</p>
+              <p><i class="fa-regular fa-user"></i></p>
+            </a>
+          </div>
+          <div class="top-mobile-menu-browe">
+            <a href="#">
+              <p>Browse</p>
+              <p>Amazon</p>
+            </a>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <a href="#">
+              <span>Amazon Home</span> <i class="fa-solid fa-house"></i>
+            </a>
+          </li>
+        </ul>
       </div>
       <div id="screen-mobile-nav-section">
         <div class="logo-bar-section-top-left">
           <div class="open-btn" onclick="openNavbar()">
             <i class="fa-solid fa-bars"></i>
           </div>
-
           <div class="logo">
             <img src="image/amazon-logo-white.png" alt="" class="img-fluid" />
           </div>
@@ -61,7 +78,7 @@
         <div class="sign-cart-section-top-right">
           <div class="signin">
             <a href="#"
-              ><span> Signin </span> <span> </span>
+              ><span> Sign </span><span>in</span><span>></span>
               <i class="fa-regular fa-user"></i>
             </a>
           </div>

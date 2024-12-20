@@ -1,8 +1,11 @@
+let bgMobile = document.getElementById("bg-behind-mobile-navbar");
 function openNavbar() {
-  document.getElementById("navbar").style.left = "0";
-  document.getElementById("navbar").style.width = "80%";
+  document.getElementById("navbar-mobile").style.left = "0";
+  document.getElementById("navbar-mobile").style.width = "80%";
+  document.getElementById("bg-behind-mobile-navbar").classList.add("active");
 }
 
 function closeNavbar() {
-  document.getElementById("navbar").style.left = "-100%";
+  document.getElementById("navbar-mobile").style.left = "-100%";
+  document.getElementById("bg-behind-mobile-navbar").classList.remove("active");
 }

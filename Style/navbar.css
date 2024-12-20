@@ -39,8 +39,7 @@ body {
   align-items: center;
   overflow: hidden;
   max-width: 100%;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 10px;
   height: 39px;
   flex: 1;
   font-size: 25px;
@@ -100,7 +99,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  & .cart-count{
+  & .cart-count {
     position: absolute;
     top: 0;
     right: -10px;
@@ -161,7 +160,7 @@ body {
   color: var(--color-wite);
   font-weight: bold;
 }
-.return-order-section-top-right{
+.return-order-section-top-right {
   display: flex;
   justify-content: center;
   align-items: center;
