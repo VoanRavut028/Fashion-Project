@@ -45,7 +45,7 @@
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
-@media (max-width: 568px) {
+@media (max-width: 767px) {
   .open-btn {
     display: block;
     background-color: transparent;
@@ -53,22 +53,25 @@
   .navbar-mobile {
     display: block;
   }
+  .navbar-mobile{
+    display: block;
+  }
 }
-@media (max-width: 568px) {
+@media (max-width: 767px) {
   #screen-mobile-nav-section {
     display: flex;
     justify-content: start;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: row;
     width: 100%;
     height: 40px;
   }
-    #screen-mobile-nav-section .logo{
-      width: 90px;
-      height: 30px;
-    }
+  #screen-mobile-nav-section .logo {
+    width: 90px;
+    height: 30px;
+  }
 }
-@media (max-width: 568px) {
+@media (max-width: 767px) {
   .navbar {
     background: linear-gradient(90deg, #e66718, #e66718, #ec8c17);
     width: 100%;
@@ -77,7 +80,10 @@
     justify-content: space-between;
     align-items: center;
   }
-  .Deliver > div:nth-child(1) {
+  .Deliver{
+    display: none;
+  }
+  .Deliver  div:nth-child(1) {
     display: none;
   }
   .Deliver div span:nth-child(2) {

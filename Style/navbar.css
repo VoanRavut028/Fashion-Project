@@ -76,7 +76,8 @@ body {
   height: 50px;
   width: 102px;
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  align-items: center;
 }
 .return > a:nth-child(1) > span:nth-child(1) {
   font-size: 12px;
@@ -92,6 +93,9 @@ body {
   height: 50px;
   width: 102px;
   font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .Cart:hover {
   max-height: 50px;
@@ -100,6 +104,9 @@ body {
 .Deliver {
   height: 50px;
   width: 102px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .Deliver > div:first-child {
   color: var(--color-wite);
@@ -123,6 +130,9 @@ body {
 .dropdown-section-top-right {
   height: 50px;
   width: 132px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .dropdown-section-top-right:hover {
   outline: 1px solid var(--color-wite);
