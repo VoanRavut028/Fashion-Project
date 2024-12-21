@@ -2,7 +2,7 @@ let bgMobile = document.getElementById("bg-behind-mobile-navbar");
 function openNavbar() {
   document.getElementById("navbar-mobile").style.left = "0";
   document.getElementById("navbar-mobile").style.width = "80%";
-  document.getElementById("bg-behind-mobile-navbar").classList.add("active");
+  bgMobile.classList.add("active");
 }
 
 function closeNavbar() {
