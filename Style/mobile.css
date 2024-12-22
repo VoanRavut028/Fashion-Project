@@ -57,7 +57,20 @@
 .sign-cart-section-top-right {
   display: none;
 }
-
+.navlink-see-all-menu {
+  display: flex;
+  width: auto;
+  height: 100%;
+  background-color: #fff;
+  visibility: hidden;
+  & .navlink-see-all-menu li a {
+    color: #000;
+  }
+}
+.navlink-see-all-menu.active {
+  visibility: visible;
+  opacity: 1;
+}
 @media (max-width: 767px) {
   .navbar {
     background: linear-gradient(90deg, #e66718, #e66718, #ec8c17);
@@ -71,6 +84,7 @@
     background-color: transparent;
     outline: none;
     border: none;
+    margin-left: -350px;
   }
   .open-btn {
     display: block;
@@ -78,9 +92,10 @@
   }
   .navbar-mobile {
     display: block;
-  }
-  .navbar-mobile {
-    display: block;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: -100%;
   }
   #screen-mobile-nav-section {
     display: flex;
