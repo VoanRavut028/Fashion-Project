@@ -19,7 +19,7 @@
   cursor: pointer;
   outline: 1px solid var(--color-wite);
 }
-@media (max-width: 767px) {
+@media (max-width: 568px) {
   .tool-section-menu {
     display: none;
     background-color: transparent;

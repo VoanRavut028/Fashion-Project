@@ -16,6 +16,6 @@ function SeeAllMenu() {
 
   SeeAllMenu.addEventListener("click", () => {
     alert("1");
-    NavlinkSeeAllMenu.classList.add("active");
+    NavlinkSeeAllMenu.classList.add("menuactive");
   });
 }

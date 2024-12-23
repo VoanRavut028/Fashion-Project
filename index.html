@@ -31,14 +31,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- <link rel="stylesheet" href="Style/navbar.css" /> -->
-
+    <link rel="stylesheet" href="Style/navbar.css" />
+    <script src="Script/navbar.js"></script>
     <link rel="stylesheet" href="Style/tool-section-menu.css" />
     <link rel="stylesheet" href="Style/mobile.css" />
     <title>Amazon</title>
   </head>
   <body>
-    <nav class="navbar d-lg-flex justify-content-center a;ign-items-center">
+    <nav class="navbar">
       <div class="bg-behind-mobile-navbar" id="bg-behind-mobile-navbar"></div>
       <div class="navbar-mobile" id="navbar-mobile">
         <button class="close-btn" onclick="closeNavbar()">
@@ -89,72 +89,77 @@
               <li class="nav-item">
                 <a class="p-4 nav-link" href="#">Book</a>
               </li>
-              <li class="nav-item"><a class="p-4 nav-link" href="#">PC</a></li>
+              <li class="nav-item">
+                <a class="p-4 nav-link" href="#">PC</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link btn-group p-4" href="#" id="see-all-menu"
                   >See all
                 </a>
-                <ul
-                  class="navbar-nav navlink-see-all-menu"
-                  id="navlink-see-all-menu"
-                >
+                <ul class="navbar-nav" id="navlink-see-all-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Amazon Musics</a>
+                    <a class="nav-link p-4" href="#">Amazon Musics</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Amazon Musics</a>
+                    <a class="nav-link p-4" href="#">Amazon Musics</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Amazon Musics</a>
+                    <a class="nav-link p-4" href="#">Amazon Musics</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Amazon Musics</a>
+                    <a class="nav-link p-4" href="#">Amazon Musics</a>
                   </li>
                 </ul>
               </li>
             </ul>
           </li>
-          <li><a href="#"></a></li>
         </ul>
       </div>
-      <div id="screen-mobile-nav-section">
-        <div class="logo-bar-section-top-left">
-          <div class="open-btn" onclick="openNavbar()">
+      <!-- -  -->
+      <div class="" id="screen-mobile-nav-section">
+        <div class="logo-bar-section-top-left d-flex align-items-center jus">
+          <button class="open-btn" onclick="openNavbar()">
             <i class="fa-solid fa-bars"></i>
-          </div>
-          <div class="logo">
-            <img src="image/amazon-logo-white.png" alt="" class="img-fluid" />
-          </div>
+          </button>
+          <!-- <div class="logo"> -->
+          <img
+            src="image/amazon-logo-white.png"
+            alt="logo"
+            class="img-fluid logo"
+          />
         </div>
-        <div class="sign-cart-section-top-right">
-          <div class="signin">
-            <a href="#"
-              ><span> Sign </span><span>in</span><span>></span>
-              <i class="fa-regular fa-user"></i>
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <span class="">0</span>
-              <span>Cart</span>
-            </a>
-          </div>
+        <!-- </div> -->
+        <!-- <div class=""> -->
+        <div class="signin-mobile ">
+          <a href="#"
+            ><span> Sign </span><span>in</span><span>></span>
+            <i class="fa-regular fa-user"></i>
+          </a>
+          <!-- </div> -->
+          <!-- <div
+            class="cart-mobile"
+          > -->
+          <a href="#">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="p-1">0</span> 
+          </a>
         </div>
+        <!-- </div> -->
       </div>
-
       <!-- - -->
-      <div class="Deliver d-flex justify-content-center align-items-center">
+      <div
+        class="Deliver d-none d-md-flex text-light gap-1 justify-content-center align-items-center"
+      >
         <div>
           <i class="fa-solid fa-location-dot"></i>
         </div>
-        <div class="d-flex flex-column">
+        <div class="d-none d-md-flex flex-column">
           <span>Deliver to</span>
           <span class="fw-bold p-0">Cambodia</span>
         </div>
       </div>
       <!-- -  -->
-      <div class="Search-bar">
+      <div class="Search-bar d-flex justify-content-center align-items-center">
         <input
           type="text"
           class="form-control shadow-none fs-6"
@@ -165,7 +170,9 @@
         </span>
       </div>
       <!-- -  -->
-      <div class="dropdown-section-top-right">
+      <div
+        class="dropdown-section-top-right d-none d-md-flex justify-content-center align-items-center"
+      >
         <button
           class="btn shadow-none account-lists text-light dropdown-toggle"
           type="button"
@@ -174,17 +181,22 @@
           <span class="fw-bold">Account & Lists</span>
         </button>
       </div>
-      <div class="return-order-section-top-right">
-        <div class="me-0 return">
-          <a href="#" class="my-0 py-0 nav-link">
+      <div class="d-none d-md-flex justify-content-center align-items-center">
+        <div
+          class="me-0 d-none d-md-flex justify-content-center align-items-center return"
+        >
+          <a href="#" class="d-flex flex-column my-0 py-0 nav-link">
             <span>Returns</span>
             <span class="fw-bolder">& Orders</span>
           </a>
         </div>
 
         <!-- Cart Section -->
-        <div class="Cart">
-          <a href="#">
+        <div class="Cart d-none d-md-flex align-items-center">
+          <a
+            href="#"
+            class="d-none d-md-flex gap-1 align-items-center nav-link position-relative"
+          >
             <i class="fa-solid fa-cart-shopping"></i>
             <span class="cart-count">0</span>
             <span>Cart</span>
@@ -195,7 +207,7 @@
     </nav>
     <!-- start-tool-section  -->
     <div
-      class="container-fluid tool-section-menu d-flex justify-content-start align-items-center text-center"
+      class="container-fluid tool-section-menu d-none d-md-flex justify-content-start align-items-center text-center"
     >
       <div class="tool-items">
         <i class="fa-solid fa-bars"></i>
@@ -220,6 +232,5 @@
 
     <!-- end-tool-section  -->
     <script src="Script/mobile.js"></script>
-    <script src="Script/navbar.js"></script>
   </body>
 </html>

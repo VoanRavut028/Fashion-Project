@@ -22,7 +22,7 @@ body {
   background: linear-gradient(to right, #014133, #025b3f, #04724b);
 }
 
-.logo img {
+.logo  {
   width: 113px;
   height: 50px;
   padding: 10px 15px;
@@ -34,12 +34,10 @@ body {
   cursor: pointer;
 }
 .Search-bar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
   max-width: 100%;
-  margin: 0 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   height: 39px;
   flex: 1;
   font-size: 25px;
@@ -78,8 +76,7 @@ body {
   height: 50px;
   width: 102px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: end;
 }
 .return > a:nth-child(1) > span:nth-child(1) {
   font-size: 12px;
@@ -95,20 +92,6 @@ body {
   height: 50px;
   width: 102px;
   font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  & .cart-count {
-    position: absolute;
-    top: 0;
-    right: -10px;
-    font-size: 1rem;
-  }
-}
-.Cart a {
-  color: var(--color-wite);
-  text-decoration: none;
 }
 .Cart:hover {
   max-height: 50px;
@@ -117,9 +100,6 @@ body {
 .Deliver {
   height: 50px;
   width: 102px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .Deliver > div:first-child {
   color: var(--color-wite);
@@ -143,9 +123,6 @@ body {
 .dropdown-section-top-right {
   height: 50px;
   width: 132px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .dropdown-section-top-right:hover {
   outline: 1px solid var(--color-wite);
@@ -160,8 +137,11 @@ body {
   color: var(--color-wite);
   font-weight: bold;
 }
-.return-order-section-top-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.Menu-icon {
+  display: none;
+  cursor: pointer;
+}
+.Menu-icon i {
+  color: #fff;
+  font-size: 20px;
 }
